@@ -1,0 +1,14 @@
+main
+....tf.config.experimental.set_memory_growth
+....keras.datasets.mnist.load_data
+
+....keras.models.Sequential
+........keras.layers.Flatten
+........keras.layers.Dense
+........keras.layers.Dense
+........keras.layers.Dense
+
+....keras.losses.SparseCategoricalCrossentropy
+....model.compile
+....model.fit
+....model.evaluate
